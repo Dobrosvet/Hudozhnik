@@ -1,4 +1,4 @@
-## Художник.JS
+## Художник.JS (в разработке)
 Бибилотека для разработки 3D JavaScript приложений написанная приемущественно на русском языке.
 
 Цель проекта: создать русскоязычную библиотеку для 3D визуализации и анимации, в будущем планируется использовать её для
@@ -17,8 +17,8 @@
 - При изменении участка кода под определённым номером задачи, нужно указывать номер этой задачи в комментарии к снимкам
   (commit'ам) поставив перед ним знак решётки "#"
 - Общий формат комментариев такой<br>
-  На первой строчке, коротко о сути проделанной работы представьте что это заголовок новости. Далее, вторя, пустая строка.
-  Далее, треться строка, идёт подробное но наиболее краткое описание проделанной работы<br>
+  На первой строчке, коротко о сути проделанной работы представьте что это заголовок новости. Далее, вторя, пустая
+  строка. Далее, треться строка, идёт подробное но наиболее краткое описание проделанной работы<br>
   <pre>
   Общее описание изменений (тема изменений) номер задачи на GitHub
 
@@ -33,20 +33,32 @@
 - Принимаются предложения по улучшению стиля кода, конструкций, приёмов, названий функций и переменных, по облегчению
   смысловой составляющей кода и так далее.
 - Названия переменных и функций пушутся в "<a href="https://ru.wikipedia.org/wiki/Snake_case">змеином_регистре</a>"
-- Длинна строки не должна быть больше 120 символов
-- Отступ 2 пробела (Settings > Editor > Code Style > JavaScript > Tabs and Indents > изменить значения на 2)
-- Выравнивание присваивания переменных (Settings > Editor > Code Style > JavaScript > Wrapping and Braces >
-  Variable declarations установить в Wrap always и Variable declarations > Align установить в When grouped
 - Не использовать ключевые слова var, const
 - По возможности следуйте этим стандартам https://standardjs.com/rules если в правилах этого репозитория не оговорено
   иное
 
 #### Заметки по настройке среды разработки JetBrains
-- Для игнорирования предупреждений что точка с запятой ";" отсутствует в конце выражения.
-  Нужно зайти в File > Settings > Editor > Inspections > JavaScript > Снять галочку с пункта "Unterminated statement"
+- Длинна строки не должна быть больше 120 символов
+- Отступ 2 пробела (Settings > Editor > Code Style > JavaScript > Tabs and Indents > изменить значения на 2)
+- Выравнивание присваивания переменных<br>
+  Settings > Editor > Code Style > JavaScript > Wrapping and Braces > Variable declarations установить в Wrap always и
+  Variable declarations > Align установить в When grouped
+- Для игнорирования предупреждений что точка с запятой ";" отсутствует в конце выражения.<br>
+  File > Settings > Editor > Inspections > JavaScript > Снять галочку с пункта "Unterminated statement"
 - Отключить предупреждения что переменная объявлена без var<br>
-  Inspections > JavaScript > General > Imlpicicty declared global JavaScript variable убрать галочку
+  File > Settings > Inspections > JavaScript > General > Imlpicicty declared global JavaScript variable убрать галочку
 - Включить предупреждения что строка длинее правого отступа (он должен быть 120)<br>
-  Inspections > General > Line is longer than allowed code style поставить галочку
+  File > Settings > Inspections > General > Line is longer than allowed code style поставить галочку
 - Отключение предупреждений о грамматических ошибках<br>
-  Inspections > Spelling > Typo снять галочку
+  File > Settings > Inspections > Spelling > Typo снять галочку
+- Оключение предупреждений о нахождении в имени одновременна ASCII и не-ASCII символов
+  File > Settings > Inspections > JavaScript > Naming conventions > Снять галочку с пункта "Identifiers with ASCII
+  symbols"
+- Отключение предупреждений, что в идентификаторах не должно быть ACSII символов
+  File > Settings > Inspections > Internationalization issues > Non-ACSII characters
+  
+#### Полезные ссылки
+- Что такое перспективная матрица 
+<a href="https://habrahabr.ru/post/252771/">Перспективные матрицы в графическом API или дьявол прячется в деталях</a>
+- Почему я использую async/await
+<a href="https://habrahabr.ru/company/ruvds/blog/337662/">JavaScript: методы асинхронного программирования</a>
