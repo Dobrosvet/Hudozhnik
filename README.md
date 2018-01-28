@@ -56,6 +56,8 @@
   symbols"
 - Отключение предупреждений, что в идентификаторах не должно быть ACSII символов
   File > Settings > Inspections > Internationalization issues > Non-ACSII characters
+- Отключение предупреждений, что в идентификаторах не должно быть ACSII символов
+  File > Settings > Inspections > JavaScript > General > Unfiltered for..in loop
   
 #### Полезные ссылки
 - Как обычно происходит <a href="https://habrahabr.ru/post/75990/">Командная работа в Git</a> (есть схема)
